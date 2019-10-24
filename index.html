@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Code|Modak|Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href = 'style.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class='home'>
+    <header>
+
+     <div class='logo'>
+         <h2>
+             marvelGang
+         </h2>
+
+     </div>
+     <div class="hidbut">
+         <button type='button' onclick="onc()">=</button>
+     </div>
+     <div class='links' id='change'>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">about</a></li>
+
+        </ul>
+
+     </div>
+
+    </header>
+  
+    <div class="middle">
+      <div class='heading'><H2>Marvel Gang</H2></div>
+      
+      <p>The Marvel Cinematic Universe is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics.</p>
+    </div>
+    <div class='foot'>
+        <img src='./images/facebook.png'>
+        <img src='./images/instagram.png'>
+        <img src='./images/twitter.png'>
+        </div>
+        
+</div>
+
+
+<script>
+function onc()
+{
+    var div = document.getElementById('change')
+    if(div.className=='links')
+   { div.className = 'changed'}
+    else
+    {div.className='links'}
+
+}
+
+</script>
+</body>
+</html>

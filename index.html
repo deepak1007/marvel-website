@@ -9,8 +9,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div style='display:flex; flex-direction:column; width:100vw '>
     <div class='home'>
-    <header>
+    <header id='hh'>
 
      <div class='logo'>
          <h2>
@@ -38,29 +39,95 @@
       
       <p>The Marvel Cinematic Universe is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics.</p>
     </div>
-    <div class='foot'>
+   <div class='foot'>
         <img src='./images/facebook.png'>
         <img src='./images/instagram.png'>
         <img src='./images/twitter.png'>
         </div>
         
 </div>
-<section style='height:100vh; position:relative; '>
-<div class='char'>
-    <div class='text'>
-        <h2>Iron Man</h2>
-        <div class='para'>
-            <p>
-                Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the Avengers, and the former CEO of Stark Industries. A brash but brilliant inventor, Stark was self-described as a genius, billionaire, playboy and philanthropist.
-            </p>
-        </div>
+
+<div class="section">
+    <div class='char'>
+           
+        <div class='img' >
+                    <img src="./images/chilling iron.jpg" alt="">
+            </div>
+               
+           
+            <div class='text'>
+                    <h2>Iron Man</h2>
+                    
+                        <p>
+                            Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the Avengers, and the former CEO of Stark Industries. A brash but brilliant inventor, Stark was self-described as a genius, billionaire, playboy and philanthropist.
+                        </p>
+                     <a href="#"> GO </a>
+                    
+                </div>
     </div>
-    <div class='img'>
-        <img src="./images/crop__3_-removebg-preview.png" alt="">
+            
+    
+                    
+                  
+                         
+                  
     </div>
+
+    <div class="section">
+            <div class='char' style="flex-direction:row-reverse">
+                   
+                <div class='img' >
+                            <img src="./images/chilling iron.jpg" alt="">
+                    </div>
+                       
+                   
+                    <div class='text'>
+                            <h2>Iron Man</h2>
+                            
+                                <p>
+                                    Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the Avengers, and the former CEO of Stark Industries. A brash but brilliant inventor, Stark was self-described as a genius, billionaire, playboy and philanthropist.
+                                </p>
+                             <a href="#"> GO </a>
+                            
+                        </div>
+            </div>
+                    
+            
+                            
+                          
+                                 
+                          
+            </div>
+
+    <div class="section">
+            <div class='char'>
+                   
+                <div class='img' >
+                            <img src="./images/chilling iron.jpg" alt="">
+                    </div>
+                       
+                   
+                    <div class='text'>
+                            <h2>Iron Man</h2>
+                            
+                                <p>
+                                    Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the Avengers, and the former CEO of Stark Industries. A brash but brilliant inventor, Stark was self-described as a genius, billionaire, playboy and philanthropist.
+                                </p>
+                             <a href="#"> GO </a>
+                            
+                        </div>
+            </div>
+                    
+            
+                            
+                          
+                                 
+                          
+            </div>
+
+            
+
 </div>
-     
-</section>
 
 <script>
 function onc()
@@ -72,6 +139,23 @@ function onc()
     {div.className='links'}
 
 }
+window.addEventListener('resize',()=>{if(window.matchMedia('min-width:701px')){document.getElementById('change').className='links'}})
+var div = document.getElementById('hh')
+var prevScrollpos = 0;
+
+window.addEventListener('scroll', () => {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos == currentScrollPos) {
+    div.style.backgroundColor ='transparent'
+  } else {
+    div.style.backgroundColor ='#451e3e';
+  }
+  
+})
+
+
+
+
 
 </script>
 </body>

@@ -27,14 +27,14 @@ header .changed ul li a {text-decoration: none; font-size:20px;color:white; text
 .middle .heading h2 {font-size:100px;font-family:'roboto';}
 .middle p {width:50%; text-align:center; font-size:20px; word-spacing:0.5vmax; line-height:3vh;margin-top:20px;font-family:roboto;animation-name:floatt;animation-duration:4s;animation-iteration-count: infinite;}
 
-.home .foot {position:absolute; bottom:5px; width:100%; display:flex; justify-content:center;}
+.home .foot {position:absolute; bottom:5px; width:100%; display:flex; justify-content:center; position:fixed;z-index:100;}
 .home .foot img{width:30px;margin:10px 20px; animation:floatt 2s infinite;}
 .home .foot img:hover{animation:rotate 1s infinite;}
 
 .section { width:100%;height:100vh ; background:rgba(225,225, 225, 0.89);position:relative}
 .section .char {display:flex; flex-direction:row; width:100%;height:90% ; background:whitesmoke;opacity:1;margin:0px 0px; padding:0px 0px; align-items:center; justify-items:space-around; top:50%; transform:translateY(-50%);position:absolute;}
 .section .char .img {height:100%; width:50%;background:#451e3e ; position:relative}
-.section .char .img img {width:100% ; height:90%;opacity:1; background:whitesmoke; position:absolute; top:50%;left:50%; transform:translate(-50%,-50%) }
+.section .char .img img {width:100% ; height:100%;opacity:1; background:whitesmoke; position:absolute; top:50%;left:50%; transform:translate(-50%,-50%) }
 .section .char .text { display:flex; flex-direction:column;  align-items:center; width:100%; height:50%;font-family:'roboto'}
 .section .char .text p { width:70%; text-align:center;line-height:4vh; font-size:20px;opacity:1;color:#251e3e; font-family:'roboto'}
 .section .char .text h2{font-size:10vh;color: #851e3e}
@@ -82,11 +82,17 @@ header .changed ul li a {text-decoration: none; font-size:20px;color:white; text
 /*for photo remove display:none property form above in .section .char { justify-items:space-around; position:absolute; top:50%; translate(-50%)} in.section add background:whitesmoke with less opacity;*/
 
 .section .char .text { display:flex; flex-direction:column;  align-items:center; width:100%; height:50%;font-family:'roboto'; padding:5px; position:absolute; top:50%;transform:translateY(-50%)}
-.section .char .text p { width:60%; text-align:justify;line-height:3.5vh; font-size:18px;opacity:1;color:white; font-family:'roboto'}
+.section .char .text p { width:60%; text-align:justify;line-height:3.5vh; font-size:20px;opacity:1;color:white; font-family:'roboto';margin-top:20px;}
 .section .char .text h2{font-size:10vh;color: white;font-size:8vmax}
 .section .char a {text-decoration: none; font-size:30px; margin-top:38px;}
 .section:nth-child(odd) .char{flex-direction:column}
 .section .char .text a {color:white}
 
-}
+#thor {background:url('./images/thor 1.jpg') ; background-position:center;background-repeat:no-repeat;background-position:center; background-repeat:no-repeat;  background-size:cover}
 
+#cap {background:url('./images/captain3.jpg') ; background-position:center; background-size:contain ; background-repeat:no-repeat;background-position:center; background-repeat:no-repeat;  background-size:cover}
+
+#cap .char .text h2 {font-size:6vmax;line-height:60px;}
+
+
+}
